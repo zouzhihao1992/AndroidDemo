@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidDemo</string>
+
+    <string-array name="main_activity_menu">
+        <item>Volley</item>
+    </string-array>
 </resources>
