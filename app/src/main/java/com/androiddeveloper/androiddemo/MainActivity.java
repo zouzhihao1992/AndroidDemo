@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
                     case "Volley":
                         startActivity(new Intent(MainActivity.this, VolleyActivity.class));
                         break;
+                    case "Rxjava":
+                        startActivity(new Intent(MainActivity.this, RxJavaActivity.class));
+                        break;
                     default:
                         break;
                 }
