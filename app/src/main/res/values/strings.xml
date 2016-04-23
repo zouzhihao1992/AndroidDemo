@@ -4,5 +4,6 @@
     <string-array name="main_activity_menu">
         <item>Volley</item>
         <item>Rxjava</item>
+        <item>Retrofit</item>
     </string-array>
 </resources>

@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
                     case "Rxjava":
                         startActivity(new Intent(MainActivity.this, RxJavaActivity.class));
                         break;
+                    case "Retrofit":
+                        startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
+                        break;
                     default:
                         break;
                 }
