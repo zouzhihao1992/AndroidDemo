@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
                     case "Retrofit":
                         startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
                         break;
+                    case "Tab":
+                        startActivity(new Intent(MainActivity.this,TabsActivity.class));
+                        break;
                     default:
                         break;
                 }

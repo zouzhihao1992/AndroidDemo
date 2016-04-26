@@ -5,5 +5,6 @@
         <item>Volley</item>
         <item>Rxjava</item>
         <item>Retrofit</item>
+        <item>Tab</item>
     </string-array>
 </resources>

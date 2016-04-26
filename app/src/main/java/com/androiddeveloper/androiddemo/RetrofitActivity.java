@@ -27,38 +27,70 @@ public class RetrofitActivity extends AppCompatActivity {
         query();
     }
 
+    private static String BASE_URL = "http://apis.baidu.com";
+    private static String API_KEY = "d614ea4e26e293c87fb3bd90188b33df";
 
-
-    public interface PhoneService {
-        @GET("/apistore/mobilenumber/mobilenumber")
-        Call<PhoneResult> getResult(@Header("apikey") String apikey, @Query("phone") String phone);
+    public interface PhoneInfo {
+        @GET("apistore/mobilenumber/mobilenumber")
+        Call<PhoneResult> getInfo(@Header("apikey") String apikey, @Query("phone") String phone);
     }
 
-    private static final String Basic_URL = "http://apis.baidu.com";
-    private static final String API_KEY = "d614ea4e26e293c87fb3bd90188b33df";
-    public void query(){
+
+    private void query() {
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl(Basic_URL)
+                .baseUrl(BASE_URL)
                 .build();
-        PhoneService phoneService = retrofit.create(PhoneService.class);
-        Call<PhoneResult> call = phoneService.getResult(API_KEY,"13888888888");
-
+        final PhoneInfo phoneInfo = retrofit.create(PhoneInfo.class);
+        Call<PhoneResult> call = phoneInfo.getInfo(API_KEY,"13456789123");
         call.enqueue(new Callback<PhoneResult>() {
             @Override
             public void onResponse(Call<PhoneResult> call, Response<PhoneResult> response) {
                 if (response.isSuccessful()){
                     PhoneResult phoneResult = response.body();
-                    if (phoneResult != null){
-                        Log.d("zzh",phoneResult.getRetData().getCity());
+                    if (phoneResult!=null){
+                        Log.d("zzh,",phoneResult.getRetData().getCity());
                     }
                 }
             }
+
             @Override
             public void onFailure(Call<PhoneResult> call, Throwable t) {
-                Log.d("zzh","faliure");
+
             }
         });
-
     }
+
+
+//    public interface PhoneService {
+//        @GET("/apistore/mobilenumber/mobilenumber")
+//        Call<PhoneResult> getResult(@Header("apikey") String apikey, @Query("phone") String phone);
+//    }
+//    private static final String Basic_URL = "http://apis.baidu.com";
+//    private static final String API_KEY = "d614ea4e26e293c87fb3bd90188b33df";
+//    public void query(){
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .baseUrl(Basic_URL)
+//                .build();
+//        PhoneService phoneService = retrofit.create(PhoneService.class);
+//        Call<PhoneResult> call = phoneService.getResult(API_KEY,"13888888888");
+//
+//        call.enqueue(new Callback<PhoneResult>() {
+//            @Override
+//            public void onResponse(Call<PhoneResult> call, Response<PhoneResult> response) {
+//                if (response.isSuccessful()){
+//                    PhoneResult phoneResult = response.body();
+//                    if (phoneResult != null){
+//                        Log.d("zzh",phoneResult.getRetData().getCity());
+//                    }
+//                }
+//            }
+//            @Override
+//            public void onFailure(Call<PhoneResult> call, Throwable t) {
+//                Log.d("zzh","faliure");
+//            }
+//        });
+//
+//    }
 }

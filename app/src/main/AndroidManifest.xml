@@ -18,6 +18,7 @@
         <activity android:name=".VolleyActivity"></activity>
         <activity android:name=".RxJavaActivity"></activity>
         <activity android:name=".RetrofitActivity"></activity>
+        <activity android:name=".TabsActivity"></activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
