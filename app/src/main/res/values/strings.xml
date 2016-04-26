@@ -1,10 +1,16 @@
 <resources>
     <string name="app_name">AndroidDemo</string>
+    <string name="volley">Volley</string>
+    <string name="rxjava">RxJava</string>
+    <string name="retrofit">Retrifit</string>
+    <string name="tab">Tab</string>
+
 
     <string-array name="main_activity_menu">
         <item>Volley</item>
         <item>Rxjava</item>
         <item>Retrofit</item>
         <item>Tab</item>
+        <item>MainSetting</item>
     </string-array>
 </resources>
