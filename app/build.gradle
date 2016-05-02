@@ -1,8 +1,29 @@
 apply plugin: 'com.android.application'
 
 android {
+
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
 
     defaultConfig {
         applicationId "com.androiddeveloper.androiddemo"
@@ -32,4 +53,11 @@ dependencies {
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.android.support:design:23.3.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/Android_Map_V2.7.20151124.jar')
+    compile files('libs/AMap_Location_V2.4.1_20160414.jar')
+    compile 'com.github.k0shk0sh:PermissionHelper:1.0.9'
+    compile 'com.karumi:dexter:2.2.2'
 }

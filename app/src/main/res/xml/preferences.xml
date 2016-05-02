@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Preference android:title="@string/volley" >
-        <intent android:action="com.androiddeveloper.androiddemo.VolleyActivity"/>
-    </Preference>
-    <Preference android:title="@string/rxjava" >
-        <intent android:action="com.androiddeveloper.androiddemo.RxJavaActivity"/>
-    </Preference>
-    <Preference android:title="@string/retrofit" >
-        <intent android:action="com.androiddeveloper.androiddemo.RetrofitActivity"/>
-    </Preference>
-    <Preference android:title="@string/tab" >
-        <intent android:action="com.androiddeveloper.androiddemo.TabsActivity"/>
-    </Preference>
+
+    <PreferenceScreen android:title="@string/tools">
+        <Preference android:title="@string/rxjava">
+            <intent android:action="com.androiddeveloper.androiddemo.RxJavaActivity" />
+        </Preference>
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="@string/net">
+        <Preference android:title="@string/volley">
+            <intent android:action="com.androiddeveloper.androiddemo.VolleyActivity" />
+        </Preference>
+        <Preference android:title="@string/retrofit">
+            <intent android:action="com.androiddeveloper.androiddemo.RetrofitActivity" />
+        </Preference>
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="@string/ui">
+        <Preference android:title="@string/tab">
+            <intent android:action="com.androiddeveloper.androiddemo.TabsActivity" />
+        </Preference>
+        <Preference android:title="@string/setting">
+            <intent android:action="com.androiddeveloper.androiddemo.SettingActivity" />
+        </Preference>
+        <Preference android:title="@string/viewpager">
+            <intent android:action="com.androiddeveloper.androiddemo.ViewPageActivity" />
+        </Preference>
+
+        <Preference android:title="@string/slider">
+            <intent android:action="com.androiddeveloper.androiddemo.sliderActivity" />
+        </Preference>
+        <Preference android:name = "permissionHelper">
+            <intent android:action="com.androiddeveloper.androiddemo.activity.activity.PermissionHelperActivity"/>
+        </Preference>
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="@string/map">
+        <Preference android:title="@string/basic_map">
+            <intent android:action="com.androiddeveloper.androiddemo.activity.BasicMapActivity" />
+        </Preference>
+    </PreferenceScreen>
 
 </PreferenceScreen>

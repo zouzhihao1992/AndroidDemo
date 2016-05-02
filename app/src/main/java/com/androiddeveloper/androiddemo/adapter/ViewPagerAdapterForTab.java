@@ -1,4 +1,4 @@
-package com.androiddeveloper.androiddemo;
+package com.androiddeveloper.androiddemo.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,9 +9,9 @@ import com.androiddeveloper.androiddemo.fragement.TabsFragment;
 /**
  * Created by zzh on 16/4/25.
  */
-public class ViewPagerAdapter extends FragmentStatePagerAdapter {
+public class ViewPagerAdapterForTab extends FragmentStatePagerAdapter {
 
-    public ViewPagerAdapter(FragmentManager fm) {
+    public ViewPagerAdapterForTab(FragmentManager fm) {
         super(fm);
     }
 

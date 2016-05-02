@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/open_xxx"
+        android:title="@string/open_xxx" />
+    <ListPreference
+        android:key="@string/choose_xxx"
+        android:title="@string/choose_xxx"
+        android:entries="@array/choosed_name"
+        android:entryValues="@array/choosed_value"
+        android:defaultValue="@string/default_choosed_value"
+        android:dialogTitle="@string/choose_xxx"/>
+</PreferenceScreen>

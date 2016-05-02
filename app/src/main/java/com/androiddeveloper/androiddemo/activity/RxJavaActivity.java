@@ -1,8 +1,10 @@
-package com.androiddeveloper.androiddemo;
+package com.androiddeveloper.androiddemo.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+
+import com.androiddeveloper.androiddemo.R;
 
 import java.util.ArrayList;
 import java.util.List;

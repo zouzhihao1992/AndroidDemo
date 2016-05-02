@@ -1,4 +1,4 @@
-package com.androiddeveloper.androiddemo;
+package com.androiddeveloper.androiddemo.activity;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -18,6 +18,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.androiddeveloper.androiddemo.R;
 
 import org.json.JSONObject;
 

@@ -4,6 +4,21 @@
     <string name="rxjava">RxJava</string>
     <string name="retrofit">Retrifit</string>
     <string name="tab">Tab</string>
+    <string name="net">Net</string>
+    <string name="ui">UI</string>
+    <string name="tools">tools</string>
+    <string name="open_xxx">open_xxx</string>
+    <string name="choose_xxx">choose_xxx</string>
+    <string name="default_choosed_value">big</string>
+    <string name="setting">setting</string>
+    <string name="viewpager">ViewPager</string>
+    <string name="fragment_viewpager_textview">Fragment</string>
+    <string name="slider">slider</string>
+    <string name="map">高德地图</string>
+    <string name="basic_map">基础地图</string>
+    <string name="title_get_accounts">get account</string>
+    <string name="message_get_accounts">message get account</string>
+    <string name="explanation_message_get_accounts">app需要账户信息</string>
 
 
     <string-array name="main_activity_menu">
@@ -12,5 +27,17 @@
         <item>Retrofit</item>
         <item>Tab</item>
         <item>MainSetting</item>
+    </string-array>
+
+    <string-array name="choosed_name">
+        <item>大美女</item>
+        <item>中美女</item>
+        <item>小美女</item>
+    </string-array>
+
+    <string-array name="choosed_value">
+        <item>large</item>
+        <item>middle</item>
+        <item>small</item>
     </string-array>
 </resources>
